@@ -1,0 +1,57 @@
+.app{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    max-width:500px;
+
+}
+
+.logo{
+
+    font-size:72px;
+
+    margin-bottom:16px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+    margin-bottom:14px;
+
+}
+
+.hero p{
+
+    color:var(--text-light);
+
+    line-height:1.6;
+
+    margin-bottom:40px;
+
+}
+
+.home-card{
+
+    width:100%;
+
+    max-width:420px;
+
+}

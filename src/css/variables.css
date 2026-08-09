@@ -1,0 +1,32 @@
+:root {
+
+    /* Brand Colors */
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+
+    --success: #22c55e;
+    --warning: #facc15;
+    --danger: #ef4444;
+
+    --background: #f4f7fb;
+    --surface: #ffffff;
+
+    --text: #1f2937;
+    --text-light: #6b7280;
+
+    /* Border Radius */
+    --radius-large: 24px;
+    --radius-medium: 16px;
+    --radius-small: 10px;
+
+    /* Shadow */
+    --shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    /* Font */
+    --font:
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+}
