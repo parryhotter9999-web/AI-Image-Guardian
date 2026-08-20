@@ -12,6 +12,6 @@
     "vite": "^8.2.0"
   },
   "dependencies": {
-    "onnxruntime-web": "^1.27.0"
+    "@huggingface/transformers": "^4.2.0"
   }
 }

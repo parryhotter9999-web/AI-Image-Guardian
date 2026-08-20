@@ -6,8 +6,6 @@ export class ReportGenerator {
 
             likelihood: results.confidence.likelihood,
 
-            confidence: results.confidence.confidence,
-
             reasons: [
 
                 ...results.metadata.reasons,

@@ -2,26 +2,14 @@ export class ConfidenceCalculator {
 
     static calculate(results) {
 
-        const totalScore =
-            results.metadata.score +
-            results.artifacts.score +
-            results.ai.score;
+        // AI detector score is already a percentage.
+        // Keep the displayed result between 1% and 99%.
+        let likelihood = Math.round(results.ai.score);
 
-        const likelihood = Math.min(totalScore, 100);
-
-        let confidence = "Low";
-
-        if (likelihood >= 70)
-            confidence = "High";
-        else if (likelihood >= 40)
-            confidence = "Medium";
+        likelihood = Math.max(1, Math.min(99, likelihood));
 
         return {
-
-            likelihood,
-
-            confidence
-
+            likelihood
         };
 
     }

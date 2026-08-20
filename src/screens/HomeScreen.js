@@ -97,10 +97,19 @@ imageInput.onchange = async (event) => {
         console.log("2️⃣ Analysis complete");
         console.log(report);
 
-        alert(
-            `Likelihood: ${report.likelihood}%\n` +
-            `Confidence: ${report.confidence}`
-        );
+        const likelihood = report.likelihood;
+
+const status =
+    likelihood >= 85
+        ? "🔴 Likely AI-Generated"
+        : likelihood >= 31
+            ? "🟡 Uncertain"
+            : "🟢 Likely Authentic";
+            
+alert(
+    `${status}\n\n` +
+    `${likelihood}% AI Generation Likelihood`
+);
 
     } catch (error) {
 
